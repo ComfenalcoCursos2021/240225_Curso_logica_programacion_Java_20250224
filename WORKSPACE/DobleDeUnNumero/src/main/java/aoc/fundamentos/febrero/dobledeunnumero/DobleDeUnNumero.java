@@ -3,6 +3,8 @@
  */
 package aoc.fundamentos.febrero.dobledeunnumero;
 
+import java.util.Scanner;
+
 /**
  *
  * @author DELL
@@ -10,7 +12,8 @@ package aoc.fundamentos.febrero.dobledeunnumero;
 public class DobleDeUnNumero {
 
     public static void main(String[] args) {
-        int a = 5;
+        Scanner teclado = new Scanner(System.in);
+        int a = teclado.nextInt();
         a = a * 2;
         System.out.println("El doble " + a);
     }
