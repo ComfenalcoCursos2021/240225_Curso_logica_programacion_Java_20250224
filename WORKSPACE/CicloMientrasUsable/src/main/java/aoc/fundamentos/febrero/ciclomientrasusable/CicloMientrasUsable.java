@@ -21,7 +21,7 @@ public class CicloMientrasUsable {
         System.out.println("Ingresa el dividendo");
         dividendo = teclado.nextInt();
         System.out.println("Ingresa el divisor");
-        divisor = teclado.nextInt();
+        divisor = Integer.parseInt(javax.swing.JOptionPane.showInputDialog("EL DIVISOR"));
         
         int temporal = dividendo;
         //System.out.println("el valor temporal " + temporal);
@@ -32,6 +32,7 @@ public class CicloMientrasUsable {
         }
         
         System.out.println("El residuo es -> " + temporal);
+        javax.swing.JOptionPane.showMessageDialog(null, "El residuo es -> " + temporal);
         
         System.out.println("Termino!!!");
     }
